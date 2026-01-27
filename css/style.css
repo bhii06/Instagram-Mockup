@@ -85,6 +85,22 @@
   transition: all 0.8s ease;
 }
 
+@media (max-height: 500px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+  }
+  .profil {
+    width: 20px;
+    height: 20px;
+    padding: 0.5vh;
+  }
+  .logo-wrap {
+    margin-bottom: 3vh;
+  }
+}
+
 /* feed */
 .story-ig {
   background-color: black;
@@ -95,11 +111,16 @@
   overflow-x:auto ;
   gap: 10px;
   display: flex;
-  margin-left: 140px;
+  /* margin-left: 140px; */
+  margin: 0 140px;
 }
 
 .story-ig a {
   padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: medium;
 }
 
 .story-ring {
@@ -127,7 +148,7 @@
 
 @media (max-height:600px) {
   .story-ig {
-    padding: 10px;
+    padding: 37px;
     gap: 6px;
   }
 
@@ -139,18 +160,118 @@
 }
 
 
-@media (max-height: 500px) {
-  .icon {
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-  }
-  .profil {
-    width: 20px;
-    height: 20px;
-    padding: 0.5vh;
-  }
-  .logo-wrap {
-    margin-bottom: 3vh;
-  }
+/* feed content */
+/* header */
+main {
+  grid-column: 2;
+  min-height: 600px;
+  background-color: black;
+  margin: 0 140px;
+  width: 100%;
+  max-width: 675px;
+  padding: 10px 50px;
 }
+
+.post {
+ padding: 10px;
+
+}
+
+.post header{
+  padding: 5px;
+  display: flex;
+}
+
+.post p{
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.other {
+  margin-left: auto;
+}
+
+main, .post, .post header, .post p, .avatar, .other {
+  transition: all 0.8s ease;
+}
+
+/* postingan */
+.other img {
+  padding: 15px 10px 10px 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.post-media {
+  padding: 5px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.post-media img {
+  
+  width: 100%;
+  display: flex;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2.5%;
+}
+
+.other img, .post-media, .post-media img {
+transition: all 0.8s ease;
+}
+
+/* button */
+.btn-post {
+  padding: 3px;
+  display: flex;
+}
+
+.btn-post button {
+  background-color: transparent;
+  border-style: none;
+  gap: 5px;
+}
+
+.btn-post img {
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+}
+
+.btn-save {
+  margin-left: auto
+}
+
+.btn-post button:hover {
+  transform: scale(1.15);
+  transition: transform 0.2s ease;
+}
+
+.btn-post, .btn-post button, .btn-post img, .btn-save {
+  transition: all 0.8s ease;
+}
+
+/* caption  */
+.caption {
+  margin: 5px;
+}
+
+.caption p {
+    text-align: left;
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+
+
+
