@@ -1,6 +1,6 @@
 .layout {
     display: grid;
-    grid-template-columns: 1900px 1fr 300px;
+    grid-template-columns: 190px 1fr 300px;
 }
 
 .nav-left {
@@ -85,6 +85,58 @@
   transition: all 0.8s ease;
 }
 
+/* feed */
+.story-ig {
+  background-color: black;
+  padding: 37px;
+  width: 100%;
+  max-width: 700px;
+  grid-column: 2;
+  overflow-x:auto ;
+  gap: 10px;
+  display: flex;
+  margin-left: 140px;
+}
+
+.story-ig a {
+  padding: 10px;
+}
+
+.story-ring {
+  padding: 1px;
+  border-radius: 50%; /* ini wajib! */
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  display: inline-block;
+}
+
+.story-ring img {
+  border-radius: 50%;
+  display: block;
+}
+
+
+.story-ig img {
+  border-radius: 50%;
+  height: 70px;
+  width: 76px;
+  padding: 5px;
+}
+
+.story-ig, .story-ig img, .story-ring{
+  transition: all 0.8s ease;}
+
+@media (max-height:600px) {
+  .story-ig {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .story-ig img {
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+  }
+}
 
 
 @media (max-height: 500px) {
