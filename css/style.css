@@ -1,10 +1,13 @@
+body {
+  background-color: rgb(7, 6, 8);
+}
 .layout {
     display: grid;
-    grid-template-columns: 190px 1fr 300px;
+    grid-template-columns: 190px 1fr;
 }
 
 .nav-left {
-    background-color: black;
+    background-color: rgb(7, 6, 8);
     text-align: center;
     position: fixed;
     top: 0;
@@ -103,7 +106,7 @@
 
 /* feed */
 .story-ig {
-  background-color: black;
+  background-color: rgb(7, 6, 8);
   padding: 37px;
   width: 100%;
   max-width: 700px;
@@ -111,8 +114,8 @@
   overflow-x:auto ;
   gap: 10px;
   display: flex;
-  /* margin-left: 140px; */
-  margin: 0 140px;
+  margin: auto;
+  /* margin: 0 20px; */
 }
 
 .story-ig a {
@@ -146,10 +149,11 @@
 .story-ig, .story-ig img, .story-ring{
   transition: all 0.8s ease;}
 
-@media (max-height:600px) {
+@media (max-height:900px) {
   .story-ig {
     padding: 37px;
     gap: 6px;
+  
   }
 
   .story-ig img {
@@ -165,12 +169,14 @@
 main {
   grid-column: 2;
   min-height: 600px;
-  background-color: black;
-  margin: 0 140px;
+  background-color:rgb(7, 6, 8);
+  /* margin: 0 10px; */
+  margin: auto;
   width: 100%;
   max-width: 675px;
   padding: 10px 50px;
 }
+
 
 .post {
  padding: 10px;
@@ -271,7 +277,32 @@ transition: all 0.8s ease;
     font-size: 16px;
 }
 
+/* button dm */
+.nav-dm {
+  position: fixed;
+  background-color: rgb(36, 36, 36);
+  width: 130px;
+  border-radius: 50px;
+  bottom: 20px;
+  right: 70px;
 
+}
 
+.nav-dm a {
+  text-decoration: none;
+  display: flex;
+  margin: 3px ;
+  padding: 5px 6px;
+  color: white;
+}
 
+.nav-dm img {
+  height: 25px;
+  display: flex;
+  margin: 0 15px
+}
 
+.nav-dm:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
