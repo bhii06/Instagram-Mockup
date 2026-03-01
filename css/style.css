@@ -1,6 +1,9 @@
 body {
   background-color: rgb(7, 6, 8);
+  font-family: 'Poppins', sans-serif;
 }
+
+
 .layout {
     display: grid;
     grid-template-columns: 190px 1fr;
@@ -12,11 +15,12 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 190px;
+    width: auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 50px;
 }
 
 /* nav label */
@@ -25,6 +29,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -87,6 +93,245 @@ body {
 .icon, .profil, .logo-wrap {
   transition: all 0.8s ease;
 }
+
+/* ======================= search panel ============================== */
+.search-panel {
+  position: fixed;
+  top: 0;
+  left: 0;            
+  width: 350px;        
+  height: 100vh;
+  background: #111;
+  color: white;
+  padding: 20px;
+  display: none;       
+  z-index: 999;        
+}
+
+.search-panel:target {
+  display: block;
+}
+
+.close-search {
+  display: block;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.search-panel h3 {
+  text-align: left;
+  font-size: 25px;
+}
+
+.search-panel input {
+  width: 270px;
+  height: 27px;
+  border-radius: 15px;
+}
+/* ======================================================================== */
+
+/*============================ like or notif ===============================*/
+.notif-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  background: #111;
+  color: white;
+  padding: 20px;
+  display: none;        
+  z-index: 999;        
+  overflow-y: auto;
+}
+.notif-panel h3{
+  text-align: left;
+  font-size: 25px;
+} 
+
+.notif-panel h4 {
+  text-align: left;
+}
+
+.notif-panel:target {
+  display: block;      
+}
+
+.close-notif {
+  display: block;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+ 
+
+.notif-content { 
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.notif-content a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 20px 0;              
+}
+
+.notif-content img {
+  width: 4vh; height: 4vh;
+  padding: 10px;
+}
+
+.text-content {
+  margin: 2px 0;   
+  line-height: 0.5; 
+}
+/* ==========================================================================  */
+
+/* =========================== Message Panel ================================ */
+.message-panel {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  width: 350px;
+  height: 100vh;
+  background: #111;
+  color: white;
+  padding: 20px;
+  display: none;
+  z-index: 500;
+  overflow-y: auto;
+}
+
+.message-panel h3{
+  text-align: left;
+  font-size: 25px;
+}
+
+.message-panel:target {
+  display: block; 
+}
+
+.close-message {
+  display: block;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.msg-content { 
+  display: flex;
+  text-align: left;
+}
+
+.msg-content a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 10px 0;              
+}
+
+
+.msg-content img {
+  width: 4vh; height: 4vh;
+  padding: 0 10px;
+  border-radius: 50%;
+}
+
+.text-content {
+  margin: 2px 0;   
+  line-height: 0.5; 
+}
+
+.call-vc-details {
+  display: flex;
+}
+/* ========================================================================== */
+
+/* ============================ chat panel ================================== */
+.chat-panel {
+  position: fixed;
+  top: 0;
+  left: 100px; 
+  width: 1200px;
+  height: 100vh;
+  background: #222;
+  color: white;
+  padding: 20px;
+  display: none;
+  z-index: 600;
+  overflow-y: auto;
+}
+
+.chat-panel:target {
+  display: block; 
+}
+
+.close-chat {
+  display: block;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.chat-panel img {
+  width: 4vh; height: 4vh;
+  padding: 0 10px;
+  border-radius: 50%;
+}
+
+.chat-content {
+  display: flex;
+  text-align: left;
+  border-bottom: 0.5px solid gray;
+  justify-content: space-between;
+}
+
+.chat-content a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 10px 0;   
+}
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 60px; 
+}
+
+.chat-input {
+  position: absolute;
+  bottom: 75px;
+  width: 1200px;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.chat-input button {
+  background: #0095f6;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* ========================================================================== */
 
 @media (max-height: 500px) {
   .icon {
@@ -170,7 +415,7 @@ main {
   grid-column: 2;
   min-height: 600px;
   background-color:rgb(7, 6, 8);
-  /* margin: 0 10px; */
+  /* margin: 0 10px; */ 
   margin: auto;
   width: 100%;
   max-width: 675px;
@@ -180,7 +425,6 @@ main {
 
 .post {
  padding: 10px;
-
 }
 
 .post header{
@@ -306,3 +550,5 @@ transition: all 0.8s ease;
   transform: scale(1.1);
   transition: transform 0.2s ease;
 }
+
+
