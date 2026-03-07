@@ -544,23 +544,54 @@ main {
 }
 /* ========================================================================== */
 
+/* ====== Bottom Navigation ====== */
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(7, 6, 8);
+  display: none; 
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px rgb(7, 6, 8);
+  z-index: 1000;
+}
+
+.nav-bottom a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.nav-bottom img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+  border-radius: 50%;
+}
+/* =============================== */
+
 /* ============================ chat panel ================================== */
 .chat-panel {
   position: fixed;
   top: 0;
-  left: 100px; 
+  left: 100px;
   width: 1200px;
   height: 100vh;
   background: #222;
   color: white;
-  padding: 20px;
   display: none;
   z-index: 600;
-  overflow-y: auto;
+  flex-direction: column; 
 }
 
 .chat-panel:target {
-  display: block; 
+  display: flex; 
 }
 
 .close-chat {
@@ -569,6 +600,7 @@ main {
   color: white;
   text-decoration: none;
   font-size: 20px;
+  padding: 0 10px;
 }
 
 .chat-panel img {
@@ -594,17 +626,15 @@ main {
 .chat-body {
   flex: 1;
   overflow-y: auto;
-  margin-bottom: 60px; 
+  padding: 10px;
 }
 
 .chat-input {
-  position: absolute;
-  bottom: 75px;
-  width: 1200px;
-  height: 50px;
   display: flex;
   gap: 10px;
-  
+  padding: 10px;
+  background: #333;
+  margin-top: auto; 
 }
 
 .chat-input input {
@@ -625,7 +655,38 @@ main {
 }
 /* ========================================================================== */
 
+/* button dm */
+.nav-dm {
+  position: fixed;
+  background-color: rgb(36, 36, 36);
+  width: 130px;
+  border-radius: 50px;
+  bottom: 20px;
+  right: 70px;
 
+}
+
+.nav-dm a {
+  text-decoration: none;
+  display: flex;
+  margin: 3px ;
+  padding: 5px 6px;
+  color: white;
+}
+
+.nav-dm img {
+  height: 25px;
+  display: flex;
+  margin: 0 15px
+}
+
+.nav-dm:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+
+/* ========================================================================== */
 @media (max-width: 768px) {
   main {
     width: 100%;
@@ -683,9 +744,131 @@ main {
 }
 
 
-@media (max-width: 480px) {
-  .post-grid {
+
+/* ==================== Tablet ==================== */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 80px 1fr; /* sidebar lebih ramping */
+  }
+
+  .nav-left {
+    margin-left: 10px;
+    width: 70px;
+  }
+
+  .dropdown {
+    display: none; 
+  }
+
+  .message-panel {
+    left: 80px;
+    width: 250px;
+  }
+
+  .chat-panel {
+    left: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .story-ig {
+    max-width: 100%;
+    padding: 20px;
+    gap: 6px;
+  }
+
+  .story-ig img {
+    height: 60px;
+    width: 60px;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .nav-dm {
+    display: none;
+  }
+
+  .nav-bottom { 
+    display: flex; 
+  }
+  
+  .search-panel,
+  .notif-panel {
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    max-width: none;
+    z-index: 9999;   /* pastikan di atas konten */
+  }
+}
+
+/* ==================== HP ==================== */
+@media (max-width: 600px) {
+  .layout {
     grid-template-columns: 1fr; 
+  }
+
+  .nav-left {
+    display: none; 
+  }
+
+  .message-panel {
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+  }
+
+  .chat-panel {
+    left: 0;
+    width: 96%;
+    height: 101vh; 
+ }
+
+  .chat-input {
+    padding: 8px;
+  }
+
+  .story-ig {
+    padding: 10px;
+    gap: 4px;
+    overflow-x: scroll;
+  }
+
+  .story-ig img {
+    height: 50px;
+    width: 50px;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .post-media {
+    aspect-ratio: auto; 
+  }
+
+  .nav-dm {
+    display: none;
+  }
+
+  .nav-bottom { 
+    display: flex; 
+  }
+  .search-panel,
+  .notif-panel {
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    max-width: none;
+    z-index: 9999;   /* pastikan di atas konten */
   }
 }
 

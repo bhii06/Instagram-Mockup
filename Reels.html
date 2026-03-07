@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <title>Document</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="Reels.css">
 </head>
-
-
 <body>
     
     <!-- navbar side kiri -->
@@ -24,12 +22,12 @@
             </div>
             
             <div class="logo-wrap">
-                 <a href="" class="nav-item">
+                 <a href="index.html" class="nav-item">
                     <img src="/icon/home.png" class="icon" >
                     <span class="dropdown">Home</span>
                 </a>
 
-                <a href="" class="nav-item">
+                <a href="Reels.html" class="nav-item">
                     <img src="/icon/reels.png" class="icon" alt="">
                     <span class="dropdown">Reels</span>
                 </a>
@@ -255,216 +253,67 @@
             </div>
         </div>
 
-
-
+        <!-- ===========================bottom navigation======================= -->
+        <div class="nav-bottom">
+            <a href="index.html"><img src="/icon/home.png" alt=""><span>Home</span></a>
+            <a href="#search"><img src="/icon/search.png" alt=""><span>Search</span></a>
+            <a href="reels.html"><img src="/icon/reels.png" alt=""><span>Reels</span></a>
+            <a href="#notif"><img src="/icon/like.png" alt=""><span>Like</span></a>
+            <a href="profile.html"><img src="/icon/profil.jpeg" alt=""><span>Profile</span></a>
+        </div>
 
         <!-- =================================================================== -->
-        
-        <!-- feed instagram -->
 
-        <section class="story-ig">
-            <a href="">
-                <div class="story-ring">
-                     <img src="/story/A.png" alt="">
-                </div>
-                <p>abhi</p>
-            </a>
+        <!-- ========================= reels content ============================ -->
+        <main class="reels-feed">
+  <!-- Reel 1 -->
+  <div class="reel">
+    <div class="reel-content">
+      <img src="/reels/hengker.gif" alt="">
+      <div class="reel-overlay">
+        <div style="display: flex; align-items: center;">
+          <img src="/story/F.png" alt="">
+          <h3>@fajar</h3>
+          <button>follow</button>
+        </div>
+        <p>fajar si hengker</p>
+      </div>
+    </div>
 
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/B.png" alt="">
-                </div>
-                <P>bagas</P>
-            </a>
+    <!-- Sidebar harus di dalam reel -->
+    <div class="reel-sidebar">
+      <button><img src="/icon/like.png" alt="Like"></button>
+      <button><img src="/icon/comment.png" alt="Comment"></button>
+      <button><img src="/icon/dm.png" alt="Share"></button>
+      <button><img src="/icon/save.png" alt="Save"></button>
+      <button><img src="/icon/other-post.png" alt="More"></button>
+    </div>
+  </div>
 
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/C.png" alt="">
-                </div>
-                <p>cantika</p>
-            </a>
+  <!-- Reel 2 -->
+  <div class="reel">
+    <div class="reel-content">
+      <img src="/reels/meong.gif" alt="">
+      <div class="reel-overlay">
+        <div style="display: flex; align-items: center;">
+          <img src="/story/F.png" alt="">
+          <h3>@fajar</h3>
+          <button>follow</button>
+        </div>
+        <p>fajar si hengker</p>
+      </div>
+    </div>
 
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/D.png" alt="">
-                </div>
-                <p>dafa</p>
-            </a>
-
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/E.png" alt="">
-                </div>
-                <p>edward</p>
-            </a>
-
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/F.png" alt="">
-                </div>  
-                <p>fadiyah</p>            
-            </a>
-
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/G.png" alt="">
-                </div>
-                <p>gerald</p>
-            </a>
-
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/H.png" alt="">
-                </div>
-                <p>hindia</p>
-            </a>
-
-            <a href="">
-                <div class="story-ring">
-                    <img src="/story/I.png" alt="">
-                </div>
-                <p>isac</p>
-            </a>
-        </section>
-
-        <main >
-            <article class="post">
-                <!-- avatar dan other -->
-                <header>
-                    <img src="/story/A.png" class="avatar"  alt="">
-                    <p>abhi</p>
-                    <a href="" class="other">
-                        <img src="/icon/other-post.png" alt="">
-                    </a>
-                </header>
-
-                <div class="post-media">
-                    <img src="/icon/profil.jpeg" alt="">
-                </div>
-
-                <div class="btn-post">
-                    <button >
-                        <img src="/icon/like.png" alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/comment.png
-                        " alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/repost.png" alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/dm.png" alt="">
-                    </button>
-                    
-                    <button class="btn-save">
-                        <img src="/icon/save.png" alt="">
-                    </button>
-                </div>
-
-                <div class="caption">
-                    <p> <span><b>abhi </b></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
-                </div>
-            </article>
-
-            <article class="post">
-                <!-- avatar dan other -->
-                <header>
-                    <img src="/story/anta.png" class="avatar"  alt="">
-                    <p>Kyrie</p>
-                    <a href="" class="other">
-                        <img src="/icon/other-post.png" alt="">
-                    </a>
-                </header>
-
-                <div class="post-media">
-                    <img src="/icon/Kyrie.png" alt="">
-                </div>
-
-                <div class="btn-post">
-                    <button >
-                        <img src="/icon/like.png" alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/comment.png
-                        " alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/repost.png" alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/dm.png" alt="">
-                    </button>
-                    
-                    <button class="btn-save">
-                        <img src="/icon/save.png" alt="">
-                    </button>
-                </div>
-
-                <div class="caption">
-                    <p> <span><b>Kyrie </b></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
-                </div>
-            </article>
-
-            <article class="post">
-                <!-- avatar dan other -->
-                <header>
-                    <img src="/story/C30.png" class="avatar"  alt="">
-                    <p>Curry</p>
-                    <a href="" class="other">
-                        <img src="/icon/other-post.png" alt="">
-                    </a>
-                </header>
-
-                <div class="post-media">
-                    <img src="/icon/curry.png" alt="">
-                </div>
-
-                <div class="btn-post">
-                    <button >
-                        <img src="/icon/like.png" alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/comment.png
-                        " alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/repost.png" alt="">
-                    </button>
-                    
-                    <button>
-                        <img src="/icon/dm.png" alt="">
-                    </button>
-                    
-                    <button class="btn-save">
-                        <img src="/icon/save.png" alt="">
-                    </button>
-                </div>
-
-                <div class="caption">
-                    <p> <span><b>Curry` </b></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
-                </div>
-            </article>
-        </main>
-     </div>
-
-     <div class="nav-dm">
-        <a href="">
-            <img src="/icon/dm.png" alt="">
-                pesan
-        </a>
-     </div>
-    
+    <!-- Sidebar juga di dalam reel -->
+    <div class="reel-sidebar">
+      <button><img src="/icon/like.png" alt="Like"></button>
+      <button><img src="/icon/comment.png" alt="Comment"></button>
+      <button><img src="/icon/dm.png" alt="Share"></button>
+      <button><img src="/icon/save.png" alt="Save"></button>
+      <button><img src="/icon/other-post.png" alt="More"></button>
+    </div>
+  </div>
+</main>
+        <!-- ====================================================================== -->
 </body>
 </html>

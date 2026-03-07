@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-       <!-- navbar side kiri -->
+
+<body>
+    
+    <!-- navbar side kiri -->
      <div class="layout">
         <aside class="nav-left">
             <div class="logo-wrap">
@@ -22,12 +24,12 @@
             </div>
             
             <div class="logo-wrap">
-                 <a href="" class="nav-item">
+                 <a href="index.html" class="nav-item">
                     <img src="/icon/home.png" class="icon" >
                     <span class="dropdown">Home</span>
                 </a>
 
-                <a href="" class="nav-item">
+                <a href="Reels.html" class="nav-item">
                     <img src="/icon/reels.png" class="icon" alt="">
                     <span class="dropdown">Reels</span>
                 </a>
@@ -253,168 +255,222 @@
             </div>
         </div>
 
-
-
+        <!-- ===========================bottom navigation======================= -->
+        <div class="nav-bottom">
+            <a href="index.html"><img src="/icon/home.png" alt=""><span>Home</span></a>
+            <a href="#search"><img src="/icon/search.png" alt=""><span>Search</span></a>
+            <a href="Reels.html"><img src="/icon/reels.png" alt=""><span>Reels</span></a>
+            <a href="#notif"><img src="/icon/like.png" alt=""><span>Like</span></a>
+            <a href="profile.html"><img src="/icon/profil.jpeg" alt=""><span>Profile</span></a>
+        </div>
 
         <!-- =================================================================== -->
-            
-            <main>
-                <!-- nama dan setting -->
-                <section class="profile-header">
-                    <div>
-                        <!-- profile picture -->
-                        <a href="">
-                            <div class="profile-ring">
-                                <img class="profile-img" src="/story/A.png" alt=""> 
-                            </div>
-                        </a>  
-                    </div>
-                   
-                    <div class="profile-info">
-                        <a href="" style="font-size: 25px;">
-                            Abhi
-                        </a>
-                        <p class="tag">"AF"</p>
-                        
-                        <div class="profile-stats">
-                            <p>4 postingan</p>  
-                            <a href="">177 Follower</a>
-                            <a href="">243 Follow</a>
-                        </div>
-
-                        <div style="margin-top: 8px; padding-top: 5px;">
-                            <p>06:06</p>
-                        </div>  
-                    </div>
-                    
-                    
-                    <div>
-                        <a href="#setting" class="setting" >
-                            <img src="/icon/setting.png" alt="">
-                        </a>
-                    </div>
-
-                    <div id="setting" class="modal">
-                        <a href="" class="overlay"></a>
-                        <div class="modal-setting">
-                            <a href="">Aplikasi dan situs web</a>
-                            <a href="">Kode QR</a>
-                            <a href="">Notifikasi</a>
-                            <a href="">Pengaturan dan privasi</a>
-                            <a href="">Verifikasi Meta</a>
-                            <a href="">Pengawasan</a>
-                            <a href="">Aktivitas login</a>
-                            <a href="">Keluar</a>
-                            <a href="#">batal</a>
-                        </div>
-                    </div>
-                
-                </section>
-               
-                <!-- action bar -->
-                 <section class="action-bar">
-                        
-                        <!-- navbar -->
-                            <nav>
-                                <a href="">edit profile</a>
-                            </nav>
-                            <nav>
-                                <a href="">arsip</a>
-                            </nav>         
-                 </section>
-
-                 <!-- highlight -->
-                  <section class="highlight">
-                        <div>
-                            <a href="/highlight/highlight.html">
-                                <div class="highlight-ring">
-                                    <img src="/highlight/moment.png" alt="">
-                                </div>
-                                <p>moment</p>
-                            </a>      
-                        </div>
-                        
-                        <div>
-                            <a href="">
-                                <div class="highlight-ring">
-                                    <img src="/icon/plus.png" alt="">
-                                </div>
-                                <p>add</p>
-                            </a>      
-                        </div>
-                  </section>
-
-                  <!-- postingan -->
-                  <section class="btn-selector">
-                    <nav>
-                        <button class="active">
-                            <img src="/icon/postingan.png" alt="">
-                        </button>
-                    </nav>
-
-                    <nav>
-                        <button>
-                            <img src="/icon/reels.png" alt="">
-                        </button>
-                    </nav>
-
-                    <nav>
-                        <button>
-                            <img src="/icon/save.png" alt="">
-                        </button>
-                    </nav>
-
-                    <nav>
-                        <button>
-                            <img src="/icon/tag.png" alt="">
-                        </button>
-                    </nav>
-                  </section>
-
-                  <section class="post-grid">
-                    <a href="#preview1"><img src="/icon/profil.jpeg" alt=""></a>
-                    <a href="#preview2"><img src="/icon/Kyrie.png" alt=""></a>
-                    <a href="#preview3"><img src="/icon/curry.png" alt=""></a>
-                    <a href="#preview4"><img src="/highlight/moment.png" alt=""></a>
-                  </section>
-
-                  <!-- preview -->
-                  <div id="preview1" class="modal">
-                    <a href="" class="overlay  "></a> 
-                    <div class="modal-content">
-                        <img src="/icon/profil.jpeg" alt="">
-                     </div>         
-                  </div>
-
-                  <div id="preview2" class="modal">
-                    <a href="" class="overlay  "></a> 
-                    <div class="modal-content">
-                        <img src="/icon/Kyrie.png" alt="">
-                     </div>         
-                  </div>
-                  
-                  <div id="preview3" class="modal">
-                    <a href="" class="overlay  "></a> 
-                    <div class="modal-content">
-                        <img src="/icon/curry.png" alt="">
-                     </div>         
-                  </div>
-
-                  <div id="preview4" class="modal">
-                    <a href="" class="overlay  "></a> 
-                    <div class="modal-content">
-                        <img src="/highlight/moment.png" alt="">
-                     </div>         
-                  </div>
-            </main>
-            
         
+        <!-- feed instagram -->
+
+        <section class="story-ig">
+            <a href="">
+                <div class="story-ring">
+                     <img src="/story/A.png" alt="">
+                </div>
+                <p>abhi</p>
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/B.png" alt="">
+                </div>
+                <P>bagas</P>
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/C.png" alt="">
+                </div>
+                <p>cantika</p>
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/D.png" alt="">
+                </div>
+                <p>dafa</p>
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/E.png" alt="">
+                </div>
+                <p>edward</p>
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/F.png" alt="">
+                </div>  
+                <p>fadiyah</p>            
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/G.png" alt="">
+                </div>
+                <p>gerald</p>
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/H.png" alt="">
+                </div>
+                <p>hindia</p>
+            </a>
+
+            <a href="">
+                <div class="story-ring">
+                    <img src="/story/I.png" alt="">
+                </div>
+                <p>isac</p>
+            </a>
+        </section>
+
+        <main >
+            <article class="post">
+                <!-- avatar dan other -->
+                <header>
+                    <img src="/story/A.png" class="avatar"  alt="">
+                    <p>abhi</p>
+                    <a href="" class="other">
+                        <img src="/icon/other-post.png" alt="">
+                    </a>
+                </header>
+
+                <div class="post-media">
+                    <img src="/icon/profil.jpeg" alt="">
+                </div>
+
+                <div class="btn-post">
+                    <button >
+                        <img src="/icon/like.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/comment.png
+                        " alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/repost.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/dm.png" alt="">
+                    </button>
+                    
+                    <button class="btn-save">
+                        <img src="/icon/save.png" alt="">
+                    </button>
+                </div>
+
+                <div class="caption">
+                    <p> <span><b>abhi </b></span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
+                </div>
+            </article>
+
+            <article class="post">
+                <!-- avatar dan other -->
+                <header>
+                    <img src="/story/anta.png" class="avatar"  alt="">
+                    <p>Kyrie</p>
+                    <a href="" class="other">
+                        <img src="/icon/other-post.png" alt="">
+                    </a>
+                </header>
+
+                <div class="post-media">
+                    <img src="/icon/Kyrie.png" alt="">
+                </div>
+
+                <div class="btn-post">
+                    <button >
+                        <img src="/icon/like.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/comment.png
+                        " alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/repost.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/dm.png" alt="">
+                    </button>
+                    
+                    <button class="btn-save">
+                        <img src="/icon/save.png" alt="">
+                    </button>
+                </div>
+
+                <div class="caption">
+                    <p> <span><b>Kyrie </b></span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
+                </div>
+            </article>
+
+            <article class="post">
+                <!-- avatar dan other -->
+                <header>
+                    <img src="/story/C30.png" class="avatar"  alt="">
+                    <p>Curry</p>
+                    <a href="" class="other">
+                        <img src="/icon/other-post.png" alt="">
+                    </a>
+                </header>
+
+                <div class="post-media">
+                    <img src="/icon/curry.png" alt="">
+                </div>
+
+                <div class="btn-post">
+                    <button >
+                        <img src="/icon/like.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/comment.png
+                        " alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/repost.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/dm.png" alt="">
+                    </button>
+                    
+                    <button class="btn-save">
+                        <img src="/icon/save.png" alt="">
+                    </button>
+                </div>
+
+                <div class="caption">
+                    <p> <span><b>Curry` </b></span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
+                </div>
+            </article>
+        </main>
+     </div>
+
+     <div class="nav-dm">
+        <a href="">
+            <img src="/icon/dm.png" alt="">
+                pesan
+        </a>
+     </div>
     
-    
-       
-
-
-
-
 </body>
 </html>
